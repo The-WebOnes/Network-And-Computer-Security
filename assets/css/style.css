@@ -673,26 +673,31 @@ section {
     opacity: 0;
   }
 }
+
 /*--------------------------------------------------------------
-# Clients
+# Logos
 --------------------------------------------------------------*/
-.clients {
+.logos {
   padding: 15px 0;
   text-align: center;
 }
-.clients img {
-  max-width: 45%;
+
+.logos .row{
+margin-left: 30%;
+}
+.logos img {
+  max-width: 80%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
   filter: grayscale(100);
 }
-.clients img:hover {
+.logos img:hover {
   filter: none;
   transform: scale(1.15);
 }
 @media (max-width: 768px) {
-  .clients img {
+  .logos img {
     max-width: 40%;
   }
 }
