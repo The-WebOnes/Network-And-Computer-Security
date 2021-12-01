@@ -741,8 +741,26 @@ text-align: justify;
 }
 
 @media (max-width: 768px) {
+
+  .logos {
+    padding: 0;
+    text-align: leftg;
+    background-color: #b5dcfa2a;
+  }
+
   .logos img {
-    max-width: 40%;
+    max-width: 50%;
+    padding: 0 !important;
+    display: inline-block;
+  }
+
+  .logos .row div {
+  margin-left: -2rem;
+  margin-right: -3rem
+  }
+
+  .logos .row {
+    margin-left: 10%;
   }
 }
 
