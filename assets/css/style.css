@@ -744,7 +744,7 @@ text-align: justify;
 
   .logos {
     padding: 0;
-    text-align: leftg;
+    text-align: left;
     background-color: #b5dcfa2a;
   }
 
@@ -756,11 +756,11 @@ text-align: justify;
 
   .logos .row div {
   margin-left: -2rem;
-  margin-right: -3rem
+  margin-right: -2.5rem;
   }
 
   .logos .row {
-    margin-left: 10%;
+    margin-left: 1.5%;
   }
 }
 
