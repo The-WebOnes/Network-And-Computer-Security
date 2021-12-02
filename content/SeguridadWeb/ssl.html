@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SSL / TLS | Redes y Seguridad de Computadoras</title>
+    <meta content="This Website is for our final project on the subject 'Network and computer security' "
+        name="description">
+    <meta content="Network, Webste, Security, IP, TCP, Sockets, HTTPS, HTTP, Internet of things, SSL " name="keywords">
+
+    <!-- Favicon -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--CSS Files -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="../../index.html" class="logo"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+
+                            <li class="dropdown"><a href="../Sockets/ProgramacionDeAppsConSockets.html"><span>»
+                                        Sockets</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../Sockets/ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="../Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="../Sockets/VideoSockets.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="VPN.html"><span>»
+                                        Seguridad
+                                        en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../SeguridadComunicacion/VPN.html">VPN</a></li>
+                                    <li><a href="../SeguridadComunicacion/IPSec.html">IPSec</a></li>
+                                    <li><a href="../SeguridadComunicacion/SeguridadComunicacionesVideo.html">Video</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="../SeguridadWeb/https.html"><span>» Seguridad en
+                                        la Web</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="https.html">HTTPS</a></li>
+                                    <li><a href="sll.html">SSL / TLS</a></li>
+                                    <li><a href="SeguridadWebVideo.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="../InternetCosas/InternetDeLasCosas.html"><span>» Internet
+                                        de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Descripción General</a></li>
+                                    <li><a href="#">Cómo Funciona</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Article ======= -->
+        <section class="article">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Seguridad en la web: SSL / TLS</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado 3 de Diciembre 2021
+                                </div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Seguridad</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">World Wide
+                                    Web</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Redes</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">SEO</a>
+                            </header>
+
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded"
+                                    src="../../assets/img/topics/topic-3.3.png" alt="Banner HTTPS" />
+                            </figure>
+
+                            <!-- Post content-->
+                            <section class="mb-5">
+
+                                <p class="fs-5 mb-4">SSL es el acrónimo de <b>Secure Sockets Layer (capa de sockets
+                                        seguros)</b>, la tecnología estándar para mantener segura una conexión a
+                                    Internet, así
+                                    como para proteger cualquier información confidencial que se envía entre dos
+                                    sistemas e impedir que los delincuentes lean y modifiquen cualquier dato que se
+                                    transfiera, incluida información que pudiera considerarse personal. Los dos sistemas
+                                    pueden ser un servidor y un cliente (por ejemplo, un sitio web de compras y un
+                                    navegador) o de servidor a servidor (por ejemplo, una aplicación con información que
+                                    puede identificarse como personal o con datos de nóminas).
+                                    <br><br>
+                                    Esto lo lleva a cabo asegurándose de que todos los datos que se transfieren entre
+                                    usuarios y sitios web o entre dos sistemas sean imposibles de leer. Utiliza
+                                    algoritmos de cifrado para codificar los datos que se transmiten e impedir que los
+                                    hackers los lean al enviarlos a través de la conexión. Esta información podría ser
+                                    cualquier dato confidencial o personal, por ejemplo, números de tarjeta de crédito y
+                                    otros datos bancarios, nombres y direcciones.
+                                </p>
+
+                                <h2 class="fw-bolder mb-1">¿Qué es TLS?</h2>
+
+                                <p class="fs-5 mb-4">
+                                    El protocolo <b>TLS (Transport Layer Security, seguridad de la capa de
+                                        transporte)</b> es
+                                    solo una versión actualizada y más segura de SSL. Si bien aún denominamos a nuestros
+                                    certificados de seguridad SSL porque es un término más común, al comprar
+                                    certificados SSL en DigiCert, en realidad se compran los certificados TLS más
+                                    actualizados con la opción de cifrado <b>ECC, RSA o DSA.</b>
+                                    <br><br>
+                                    En el protocolo TLS, se lleva a cabo un canal seguro y cifrado entre cliente y
+                                    servidor en donde se <b>negocia</b> la criptografía del mensaje,<b>se
+                                        autentifican</b> las claves
+                                    del cifrado y se realiza una <b>transmisión segura.</b>
+                                    <br>
+                                    El protocolo TLS se distingue por la seguridad con la interoperabilidad (las
+                                    transmisiones de datos encriptados de diferentes aplicaciones como HTTP, que pasa a
+                                    ser HTTPS)
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-3.4.png" alt="TLS">
+                                </figure>
+
+                                <h2 class="fw-bolder mb-1">¿Cómo funciona un certificado SSL?</h2>
+
+                                <p class="fs-5 mb-4">Los certificados SSL/TLS vinculan digitalmente una clave
+                                    criptográfica a la información de identificación de una empresa. Esto les permite
+                                    cifrar las transferencias de datos de tal manera que no puedan ser descifrados por
+                                    terceros
+                                    <br><br>
+                                    El protocolo TLS funciona al tener tanto una clave privada como una pública, así
+                                    como claves de sesión para cada sesión segura única. Cuando un visitante escribe una
+                                    dirección con seguridad HTTPS en su navegador web o navega a través de una página
+                                    segura, el navegador y el servidor web se conectan.
+                                    Durante la conexión inicial, las claves pública y privada se utilizarán para crear
+                                    una clave de sesión, que luego se utilizará para cifrar y descifrar los datos que se
+                                    transfieren. Esta clave de sesión seguirá siendo válida por un tiempo limitado y
+                                    solo se utilizará para esa sesión en particular
+
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-3.5.png" alt="VPN de Accesos Remoto" />
+                                </figure>
+
+                                <h2 class="fw-bolder mb-1">¿Para qué sirve un certificado SSL?</h2>
+
+                                <p class="fs-5 mb-4">SSL es necesario cuando se transfiere información confidencial como
+                                    nombres de usuario y contraseñas o información de procesamiento de pagos.
+                                    El objetivo de SSL/TLS es asegurarse de que solo una persona (la persona u
+                                    organización designada por el usuario) pueda acceder a los datos que se transfieren.
+                                    Esto es particularmente importante cuando piensas entre cuántos dispositivos y
+                                    servidores se transfiere la información antes de que llegue a su destino.
+                                    <br>
+                                    Existen tres usos principales que hacen que un certificado SSL/TLS sea imprescindible en un sitio web:
+                                    <br>
+                                <ul>
+                                    <li><b>Cuando se necesita autenticación:</b> cualquier servidor puede pretender ser tu servidor, secuestrando en el camino la información que las personas transmiten. SSL/TLS permite probar la identidad de tu servidor para que la gente sepa que en verdad eres quien dices ser.
+                                    </li>
+                                    <br>
+                                    <li><b>Para generar confianza:</b> si es un sitio de comercio electrónico o se le pide a los usuarios datos que son importantes para ellos, se debe generar la sensación de confianza. Usar un certificado es una forma visual de mostrarle a los visitantes que pueden confiar en ti y es mucho más efectivo que cualquier otra cosa que puedas decir sobre ti mismo
+                                    </li>
+                                    <br>
+                                    <li><b>Cuando necesites cumplir con los estándares de la industria:</b> en algunas industrias, como la financiera, se requiere mantener ciertos niveles básicos de seguridad. También hay lineamientos de la Industria de tarjetas de pago (PCI, por sus siglas en inglés) que debes cumplir si quieres aceptar información de tarjetas de crédito en tu sitio web. Y uno de esos requisitos es el uso de un certificado SSL/TLS.
+                                    </li>
+
+                                </ul>
+                                </p>
+
+                            </section>
+
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
+
+                            <p class="fs-5 mb-4">
+                            <ol>
+                                <li><a href="https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https "
+                                        target="_blank">https://www.websecurity.digicert.com/es/es/security-topics/what-is-ssl-tls-https
+                                    </a>
+                                </li>
+
+                                <li><a href="https://es.ryte.com/wiki/HTTPS" target="_blank">
+                                        https://es.ryte.com/wiki/HTTPS
+                                    </a>
+                                </li>
+
+                                <li><a href="https://www.adslzone.net/como-se-hace/internet/web-certificado-https/"
+                                        target="_blank">https://www.adslzone.net/como-se-hace/internet/web-certificado-https/</a>
+                                </li>
+
+                                <li><a href="https://www.hostinger.es/tutoriales/ssl-tls-https" target="_blank">
+                                        https://www.hostinger.es/tutoriales/ssl-tls-https
+                                    </a>
+                                </li>
+
+                            </ol>
+                            </p>
+                        </article>
+                    </div>
+
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+
+                        <!-- Index widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Índice de Contenido</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="https.html">1. HTTPS</a></li>
+                                            <li><a href="#">» 2. SSL / TLS</a></li>
+                                            <li><a href="SeguridadWebVideo.html">3. Video</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Categorías</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Seguridad</a></li>
+                                            <li><a href="#">Comunicación</a></li>
+                                            <li><a href="#">Redes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">SEO</a></li>
+                                            <li><a href="#">World Wide Web</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>The WebOnes</h3>
+                        <p>
+                            Universidad Autónoma de Yucatán <br>
+                            Facultad de Matemáticas<br>
+                            Mérida, Yucatán <br>
+                            México <br><br>
+                            <strong>Sitio Web:</strong> <a href="https://www.matematicas.uady.mx" target="_blank">
+                                www.matematicas.uady.mx </a><br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Enlaces Útiles</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#team">Conócenos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Contenido</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../Sockets/ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
+                                    Sockets</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="VPN.html">Seguridad en
+                                    la Comunicación de Datos
+                                    en una Red</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadWeb/SeguridadEnLaWeb.html">Seguridad en la
+                                    Web</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../InternetCosas/InternetDeLasCosas.html">Internet de las
+                                    Cosas</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>The WebOnes</span></strong>. Todos los derechos reservados
+                </div>
+                <div class="credits">
+                    Hecho con ❤️ por <a href="https://github.com/The-WebOnes" target="_blank">The WebOnes</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="https://github.com/The-WebOnes" target="_blank" class="github" id="github-footer"><i
+                        class="bx bxl-github" id="git-footer"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../assets/js/main.js"></script>
+    ¿
+</body>
+
+</html>

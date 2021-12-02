@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Internet de las Cosas | Redes y Seguridad de Computadoras</title>
+    <title>VPN | Redes y Seguridad de Computadoras</title>
     <meta content="This Website is for our final project on the subject 'Network and computer security' "
         name="description">
     <meta content="Network, Webste, Security, IP, TCP, Sockets, HTTPS, HTTP, Internet of things, SSL " name="keywords">
 
     <!-- Favicon -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="../../assets/img/favicon.png" rel="icon">
 
     <!-- Google Fonts -->
     <link
@@ -19,17 +19,16 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!--CSS Files -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <!--     <link href="assets/css/blog.css" rel="stylesheet"> -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -39,20 +38,55 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            <a href="../../index.html" class="logo"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#about">Acerca De</a></li>
-                    <li><a class="nav-link scrollto" href="index.html#team">Conócenos</a></li>
-                    <li class="dropdown"><a href="#"><span>Temas de Interés</span> <i
+                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="ProgramaciónDeAppsConSockets.html">» Programación de Aplicaciones con Sockets</a></li>
-                            <li><a href="SeguridadEnLaComunicaciónDeDatos.html">» Seguridad en la Comunicación de Datos en una Red...</a></li>
-                            <li><a href="SeguridadEnLaWeb.html">» Seguridad en la Web</a></li>
-                            <li><a href="InternetDeLasCosas.html">» Internet de las cosas</a></li>
+
+                            <li class="dropdown"><a href="../Sockets/ProgramacionDeAppsConSockets.html"><span>»
+                                        Sockets</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../Sockets/ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="../Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="../Sockets/VideoSockets.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="VPN.html"><span>»
+                                        Seguridad
+                                        en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="VPN.html">VPN</a></li>
+                                    <li><a href="IPSec.html">IPSec</a></li>
+                                    <li><a href="SeguridadComunicacionesVideo.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="../SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad en
+                                        la Web</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">HTTPS</a></li>
+                                    <li><a href="#">SSL / TLS</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="../InternetCosas/InternetDeLasCosas.html"><span>» Internet
+                                        de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Descripción General</a></li>
+                                    <li><a href="#">Cómo Funciona</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
                     </li>
                 </ul>
@@ -74,120 +108,167 @@
                             <!-- Post header-->
                             <header class="mb-4">
                                 <!-- Post title-->
-                                <h1 class="fw-bolder mb-1">Internet de las cosas</h1>
+                                <h1 class="fw-bolder mb-1">Seguridad en la comunicación de datos en una red: VPN</h1>
                                 <!-- Post meta content-->
                                 <div class="text-muted fst-italic mb-2">Publicado 3 de Diciembre 2021
                                 </div>
                                 <!-- Post categories-->
-                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Web Design</a>
-                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Freebies</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Seguridad</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Comunicación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Redes</a>
                             </header>
+
                             <!-- Preview image figure-->
                             <figure class="mb-4"><img class="img-fluid rounded"
-                                    src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
+                                    src="../../assets/img/topics/topic-2.png" alt="Banner IPSec VPN" />
+                            </figure>
+
                             <!-- Post content-->
                             <section class="mb-5">
-                                <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of
-                                    the free human mind. Because it transforms who we are, how we live, and it gives us
-                                    an understanding of our place in the universe.</p>
-                                <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we
-                                    know it are everywhere, so there's no reason to think that Earth would be unique in
-                                    that regard. Whether of not the life became intelligent is a different question, and
-                                    we'll see if we find that.</p>
-                                <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large
-                                    enough and carry enough energy into our system to disrupt transportation,
-                                    communication, the food chains, and that can be a really bad day on Earth.</p>
-                                <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
-                                <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd
-                                    cosmic thoughts every day and I realized I could hold them to myself or share them
-                                    with people who might be interested.</p>
-                                <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what
-                                    happened there because we're twirling knobs here on Earth without knowing the
-                                    consequences of it. Mars once had running water. It's bone dry today. Something bad
-                                    happened there as well.</p>
+                                <p class="fs-5 mb-4">Una VPN son las siglas de <b>«Virtual Private Network»</b>, o
+                                    también
+                                    conocida como red privada virtual, y es una tecnología de red que nos permite
+                                    extender las comunicaciones de la LAN sobre la red de Internet, y todo ello de
+                                    manera totalmente segura gracias al uso de la criptografía. Una VPN nos permitirá
+                                    que un ordenador envíe y reciba datos sobre redes compartidas o públicas, pero
+                                    estando lógicamente en la red privada con todas sus funcionalidades, permisos,
+                                    seguridad, políticas de gestión etc. </p>
+
+                                <p class="fs-5 mb-4">
+                                    Algunos usos muy típicos de las VPN son los siguientes:
+                                <ul>
+                                    <li><span>Posibilidad de conectar dos o más sedes de una empresa entre sí, usando
+                                            para ello la conectividad a Internet.</span></li>
+                                    <li><span>Permitir a los miembros del equipo de soporte técnico la conexión desde
+                                            sus casas a la empresa.</span></li>
+                                    <li><span>Que un usuario pueda acceder a su equipo doméstico desde un sitio remoto,
+                                            como, por ejemplo, en un hotel.</span></li>
+                                </ul>
+                                </p>
+
+                                <p class="fs-5 mb-4">Todos estos usos, siempre será a través de una infraestructura que
+                                    todos conocemos bien: <b>Internet.</b>
+                                    <br>
+                                    Dentro de las VPN, tenemos principalmente dos arquitecturas de VPN, las <b>VPN de
+                                        acceso remoto (VPN Roadwarrior o Mobile Clients)</b> y las <b>VPN de
+                                        Sitio-a-Sitio (VPN Site-to-site)</b>. Dependiendo de nuestras necesidades,
+                                    deberemos configurar una arquitectura u otra.
+                                </p>
+
+                                <h3 class="fw-bolder mb-4 mt-5">VPN de acceso remoto (Roadwarrior o Mobile Client):</h3>
+
+                                <p class="fs-5 mb-4">
+                                    Esta arquitectura de VPN está diseñadas para que uno o varios usuarios se conecten a
+                                    un
+                                    servidor VPN, y pueda acceder a todos los recursos compartido de su hogar o empresa,
+                                    además, permite que se realice una redirección del tráfico, de esta forma, saldremos
+                                    a
+                                    Internet a través del servidor VPN (y con la IP pública del servidor VPN). Este tipo
+                                    de
+                                    VPN son las más típicas que podemos configurar en los servidores NAS, en los
+                                    routers, y
+                                    en otros dispositivos cuyo objetivo es proporcionarnos una navegación segura a
+                                    través de
+                                    Internet. Estas VPN a nivel empresarial también servirían para aislar zonas y
+                                    servicios
+                                    de red interna que requiera una autenticación adicional, además, también podría ser
+                                    una
+                                    buena idea siempre que usemos la conectividad WiFi, tanto a nivel doméstico como
+                                    empresarial, para añadir una capa más de cifrado.
+
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-2.2.png" alt="VPN de Accesos Remoto" />
+                                </figure>
+
+                                <h3 class="fw-bolder mb-4 mt-5">VPN Sitio a sitio (VPN Site-to-Site):</h3>
+
+                                <p class="fs-5 mb-4">
+                                    Esta arquitectura de VPN está diseñadas para interconectar diferentes sedes, si, por
+                                    ejemplo, tenemos una empresa con diferentes sedes, podremos interconectarlas entre
+                                    ellas vía VPN y acceder a todos los recursos. El establecimiento de la conexión no
+                                    se realiza en el cliente final, como ocurre con las VPN de acceso remoto, sino que
+                                    lo realizan los routers o los firewalls, de esta forma, toda la red se verá como
+                                    «una» sola, aunque el tráfico viaje por varios túneles VPN.
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-2.1.png" alt="VPN Sitio a Sitio"  />
+                                </figure>
+
+                                <p class="fs-5 mb-4">
+                                    <br>
+                                    En la siguiente imagen podemos ver una arquitectura de VPN con ambos modelos
+                                    (izquierda: Sitio a Sitio - Derecha: Acceso Remoto)
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-2.3.png" alt="Banner IPSec VPN" />
+                                </figure>
                             </section>
+
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
+
+                            <p class="fs-5 mb-4">
+                            <ol>
+                                <li><a href="https://www.redeszone.net/tutoriales/vpn/ipsec-que-es-como-funciona/"
+                                        target="_blank">https://www.redeszone.net/tutoriales/vpn/ipsec-que-es-como-funciona/</a>
+                                </li>
+                                <li><a href="https://www.redeszone.net/tutoriales/vpn/vpn-site-to-site-acceso-remoto-road-warrior/"
+                                        target="_blank">https://www.redeszone.net/tutoriales/vpn/vpn-site-to-site-acceso-remoto-road-warrior/</a>
+                                </li>
+                                <li><a href="https://www.redeszone.net/analisis/repetidores-wifi/d-link-dap-x1860/"
+                                        target="_blank">
+                                        https://www.redeszone.net/analisis/repetidores-wifi/d-link-dap-x1860/
+                                    </a></li>
+                            </ol>
+                            </p>
                         </article>
                     </div>
 
                     <!-- Side widgets-->
                     <div class="col-lg-4">
 
-                        <!-- Categories widget-->
+                        <!-- Index widget-->
                         <div class="card mb-4">
-                            <div class="card-header">Categories</div>
+                            <div class="card-header">Índice de Contenido</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-12">
                                         <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Web Design</a></li>
-                                            <li><a href="#">HTML</a></li>
-                                            <li><a href="#">Freebies</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <ul class="list-unstyled mb-0">
-                                            <li><a href="#">JavaScript</a></li>
-                                            <li><a href="#">CSS</a></li>
-                                            <li><a href="#">Tutorials</a></li>
+                                            <li><a href="#">» 1. VPN</a></li>
+                                            <li><a href="IPSec.html">2. IPSec</a></li>
+                                            <li><a href="SeguridadComunicacionesVideo.html">3. Video</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Side widget-->
+                        <!-- Categories widget-->
                         <div class="card mb-4">
-                            <div class="card-header">Side Widget</div>
-                            <div class="card-body">You can put anything you want inside of these side widgets. They are
-                                easy to use, and feature the Bootstrap 5 card component!</div>
+                            <div class="card-header">Categorías</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Seguridad</a></li>
+                                            <li><a href="#">Comunicación</a></li>
+                                            <li><a href="#">Redes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Protocolo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="about-video" class="about-video">
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-
-                    <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
-                        <video controls poster="assets/img/videoposter/poster-2.jpg">
-                            <source src="assets/video/internetcosas.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="col-lg-6 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
-                        </p>
-                        <ul>
-                            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.</li>
-                            <li><i class="bx bx-check-double"></i> Duis aute irure dolor in reprehenderit in voluptate
-                                velit.</li>
-                            <li><i class="bx bx-check-double"></i> Voluptate repellendus pariatur reprehenderit corporis
-                                sint.</li>
-                            <li><i class="bx bx-check-double"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
-                                mastiro dolore eu fugiat nulla pariatur.</li>
-                        </ul>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End About Video Section -->
-
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -209,23 +290,31 @@
                         </p>
                     </div>
 
-
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Enlaces Útiles</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html/#hero">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html/about">Acerca De</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="index.html/team">Conócenos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#team">Conócenos</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Contenido</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="ProgramaciónDeAppsConSockets.html">Programación de Aplicaciones con Sockets</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaComunicaciónDeDatos.html">Seguridad en la Comunicación de Datos en una Red</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaWeb.html">Seguridad en la Web</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="InternetDeLasCosas.html">Internet de las Cosas</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../Sockets/ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
+                                    Sockets</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="VPN.html">Seguridad en
+                                    la Comunicación de Datos
+                                    en una Red</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadWeb/SeguridadEnLaWeb.html">Seguridad en la
+                                    Web</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../InternetCosas/InternetDeLasCosas.html">Internet de las
+                                    Cosas</a></li>
                         </ul>
                     </div>
 
@@ -255,17 +344,16 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-
+    <script src="../../assets/js/main.js"></script>
+    ¿
 </body>
 
 </html>
