@@ -642,6 +642,14 @@ text-align: justify;
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  #main .article p {
+    font-size: 15px !important;
+    margin: 0 0.5em 0 0.5em;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # About Video
 --------------------------------------------------------------*/
@@ -689,12 +697,11 @@ text-align: justify;
 .about-video .container .row video {
   width: 200%;
   height: auto;
-  margin-left: -5rem;
 }
 
 @media (max-width: 768px) {
   .about-video .container .row video {
-    margin-top: 4rem;
+    margin-top: 1rem;
     width: 100%;
     height: 100%;
     top: 50%;
