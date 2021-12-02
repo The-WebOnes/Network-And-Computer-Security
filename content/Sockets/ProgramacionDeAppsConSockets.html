@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Apps con Sockets | Redes y Seguridad de Computadoras</title>
+    <meta content="This Website is for our final project on the subject 'Network and computer security' "
+        name="description">
+    <meta content="Network, Webste, Security, IP, TCP, Sockets, HTTPS, HTTP, Internet of things, SSL " name="keywords">
+
+    <!-- Favicon -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--CSS Files -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="../../index.html" class="logo"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
+                    <li class="dropdown"><a href="#"><span>Temas de Interés</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+
+                            <li class="dropdown"><a
+                                    href="content/Sockets/ProgramacionDeAppsConSockets.html"><span>» Sockets</span> <i
+                                        class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="content/Sockets/ProgramacionDeAppsConSockets.html">» Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="VideoSockets.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a
+                                    href="content/SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>» Seguridad
+                                        en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">IPSec</a></li>
+                                    <li><a href="#">VPN</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="content/SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad en
+                                        la Web</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">HTTPS</a></li>
+                                    <li><a href="#">SSL / TLS</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="content/InternetCosas/InternetDeLasCosas.html"><span>» Internet
+                                        de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Descripción General</a></li>
+                                    <li><a href="#">Cómo Funciona</a></li>
+                                    <li><a href="#">Video</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Article ======= -->
+        <section class="article">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Programación de Aplicaciones con Sockets</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado 3 de Diciembre 2021
+                                </div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Programación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Servidores</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Aplicaciones</a>
+                            </header>
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded"
+                                    src="../../assets/img/topics/topic-1.jpg" alt="Modelo Cliente-Servidor" /></figure>
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">Un socket es conocido como un tipo de software que actúa como un
+                                    punto final que funciona estableciendo un enlace de comunicación de red
+                                    bidireccional entre el extremo del servidor y el programa receptor del
+                                    cliente.También se le conoce como un punto final en un canal de comunicación
+                                    bidireccional. Estos sockets se realizan y movilizan junto con un conjunto de
+                                    peticiones de programación que se identifican como llamadas de función, lo que
+                                    técnicamente se denomina interfaz de programación de aplicaciones (API). Un socket
+                                    es capaz de simplificar el funcionamiento de un programa porque los programadores
+                                    ahora sólo tienen que preocuparse de manipular las funciones del socket y esto les
+                                    permite confiar en el sistema operativo para transportar los mensajes a través de la
+                                    red correctamente.</p>
+
+                                <p class="fs-5 mb-4">Típicamente, un socket se rige por un flujo específico de eventos
+                                    para que funcione. Para un modelo cliente-servidor orientado a la conexión, el
+                                    socket en el proceso del servidor espera la petición de un cliente. Para hacer esto,
+                                    el servidor necesita principalmente establecer una dirección que los clientes puedan
+                                    usar para encontrar y conectarse al servidor. Cuando se establece una conexión con
+                                    éxito, el servidor esperará a que los clientes soliciten un servicio. El intercambio
+                                    de datos cliente-servidor tendrá lugar si el cliente se conecta al servidor a través
+                                    del socket. El servidor responderá a la solicitud del cliente y enviará una
+                                    respuesta.</p>
+
+                                <p class="fs-5 mb-4">La mayoría de las veces, las URL y sus conexiones se utilizan para
+                                    acceder a Internet. Los programas requerirán un simple enlace de comunicación entre
+                                    el cliente del programa y el servidor. Esta función está asociada a un socket que
+                                    ayuda a vincular los extremos del cliente y del servidor del programa. Si un cliente
+                                    comienza a establecer comunicación con el servidor, se realizará una conexión fiable
+                                    entre el servidor y el cliente a través del canal de comunicación TCP. Con este tipo
+                                    de comunicación, tanto el cliente como el servidor pueden leer o escribir en sockets
+                                    que están conectados a un canal de comunicación específico.</p>
+
+                            </section>
+                        </article>
+                    </div>
+
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+
+                        <!-- Index widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Índice de Contenido</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">» 1. Programación de Aplicaciones con Sockets</a></li>
+                                            <li><a href="TiposDeSockets.html">2. Tipos de Sockets</a></li>
+                                            <li><a href="VideoSockets.html">3. Freebies</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Categorías</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Servidores</a></li>
+                                            <li><a href="#">Sockets</a></li>
+                                            <li><a href="#">Programación</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Aplicacionesr</a></li>
+                                            <li><a href="#">Red</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>The WebOnes</h3>
+                        <p>
+                            Universidad Autónoma de Yucatán <br>
+                            Facultad de Matemáticas<br>
+                            Mérida, Yucatán <br>
+                            México <br><br>
+                            <strong>Sitio Web:</strong> <a href="https://www.matematicas.uady.mx" target="_blank">
+                                www.matematicas.uady.mx </a><br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Enlaces Útiles</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/#hero">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/team">Conócenos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Contenido</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="ProgramaciónDeAppsConSockets.html">Programación de Aplicaciones con
+                                    Sockets</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="SeguridadEnLaComunicaciónDeDatos.html">Seguridad en la Comunicación de Datos
+                                    en una Red</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaWeb.html">Seguridad en la
+                                    Web</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="InternetDeLasCosas.html">Internet de las
+                                    Cosas</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>The WebOnes</span></strong>. Todos los derechos reservados
+                </div>
+                <div class="credits">
+                    Hecho con ❤️ por <a href="https://github.com/The-WebOnes" target="_blank">The WebOnes</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="https://github.com/The-WebOnes" target="_blank" class="github" id="github-footer"><i
+                        class="bx bxl-github" id="git-footer"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

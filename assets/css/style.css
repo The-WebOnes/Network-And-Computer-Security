@@ -647,7 +647,7 @@ text-align: justify;
 --------------------------------------------------------------*/
 
 .about-video {
-  margin-top: -14rem;
+  margin-top: -12rem;
 }
 
 .about-video .content {
@@ -687,8 +687,9 @@ text-align: justify;
   text-align: justify;
 }
 .about-video .container .row video {
-  width: 100%;
+  width: 200%;
   height: auto;
+  margin-left: -5rem;
 }
 
 @media (max-width: 768px) {
