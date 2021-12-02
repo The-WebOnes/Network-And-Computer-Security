@@ -1,5 +1,5 @@
-# OAW
-### Repo for the Network And Computer Security class by the M.C Martín Leonel Chí Pérez
+# Network and Computer Security
+### Repo for the Network And Computer Security finalproject, imparted by the M.C Martín Leonel Chí Pérez
 ### 👥 Team Members:
 
 | ![Arturo](https://i.ibb.co/JChr4tN/Arturo.png) | ![Victor](https://i.ibb.co/hXWxtJW/Me.png)| ![Eberth](https://i.ibb.co/Xkv3fMR/Eberth.png)| ![Pedro](https://i.ibb.co/gjZ7MYy/pedro.png)|
