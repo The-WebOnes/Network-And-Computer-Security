@@ -45,23 +45,22 @@
                     <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
-                    <li class="dropdown"><a href="#"><span>Temas de Interés</span> <i
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
 
-                            <li class="dropdown"><a
-                                    href="content/Sockets/ProgramacionDeAppsConSockets.html"><span>Sockets</span> <i
+                            <li class="dropdown"><a href="ProgramacionDeAppsConSockets.html"><span>Sockets</span> <i
                                         class="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="content/Sockets/ProgramacionDeAppsConSockets.html">» Programación de
-                                        Aplicaciones</a></li>
-                                <li><a href="content/Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
-                                <li><a href="content/Sockets/VideoSockets.html">Video</a></li>
+                                    <li><a href="ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="Sockets/VideoSockets.html">Video</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown"><a
-                                    href="content/SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>Seguridad
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>Seguridad
                                         en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">IPSec</a></li>
@@ -70,7 +69,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/SeguridadWeb/SeguridadEnLaWeb.html"><span>Seguridad en
+                            <li class="dropdown"><a href="../SeguridadWeb/SeguridadEnLaWeb.html"><span>Seguridad en
                                         la Web</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">HTTPS</a></li>
@@ -79,7 +78,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/InternetCosas/InternetDeLasCosas.html"><span>Internet
+                            <li class="dropdown"><a href="../InternetCosas/InternetDeLasCosas.html"><span>Internet
                                         de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">Descripción General</a></li>
@@ -119,8 +118,16 @@
                                 <a class="badge bg-secondary text-decoration-none link-light" href="#">Aplicaciones</a>
                             </header>
 
+                            <figure class="mb-4"><img class="img-fluid rounded"
+                                    src="../../assets/img/topics/topic-1.5.png" alt="Socket de Datagrama" />
+                            </figure>
+
                             <!-- Post content-->
                             <section class="mb-5">
+                                <p class="fs-5 mb-4">Existen diferentes tipos de sockets. Se presume que los procesos se
+                                    comunican solo entre sockets del mismo tipo, pero no existe ninguna restricción que
+                                    impida la comunicación entre sockets de diferentes tipos.
+                                </p>
 
                                 <h2 class="fw-bolder mb-4 mt-5">Sockets de Datagramas</h2>
 
@@ -133,7 +140,7 @@
                                 </figure>
                                 </p>
 
-                                <h3 class="fw-bolder mb-4 mt-5">Toma de Corrientes Crudas</h3>
+                                <h3 class="fw-bolder mb-4 mt-5">Toma de Corrientes Crudas (Raw Scokets)</h3>
 
                                 <p class="fs-5 mb-4">Esta toma permite el acceso al proveedor de transporte subyacente.
                                     Estos son capaces de proporcionar a los usuarios acceso a los protocolos de
@@ -143,18 +150,64 @@
                                     han proporcionado principalmente para aquellos que están interesados en desarrollar
                                     nuevos protocolos de comunicación o para acceder a algunas instalaciones crípticas
                                     de protocolos ya existentes.
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-1.2.png" alt="Socket de Datagrama" />
+                                </figure>
                                 </p>
 
-                                <h3 class="fw-bolder mb-4 mt-5">Sockets de Paquetes Secuenciados</h3>
+                                <h3 class="fw-bolder mb-4 mt-5">Sockets de Transmisión (Stream Sockets)</h3>
 
-                                <p class="fs-5 mb-4">Esteesto es similar a una toma de corriente, con la excepción de
-                                    que se conservan los límites de los registros. Este tipo de socket permite a los
+                                <p class="fs-5 mb-4">Los sockets stream ofrecen un servicio orientado a conexión, donde
+                                    los datos se transfieren como un flujo continuo, sin encuadrarlos en registros o
+                                    bloques. Este tipo de socket se basa en el protocolo TCP, que es un protocolo
+                                    orientado a conexión. Esto implica que antes de transmitir información hay que
+                                    establecer una conexión entre los dos sockets. Mientras uno de los sockets atiende
+                                    peticiones de conexión (servidor), el otro solicita la conexión (cliente). Una vez
+                                    que los dossockets están conectados, ya se puede transmitir datos en ambas
+                                    direcciones. El protocolo incorpora de forma transparente al programador la
+                                    corrección de errores. Es decir, si detecta que parte de la información no llegó a
+                                    su destino correctamente, esta volverá a ser trasmitida. Además, no limita el tamaño
+                                    máximo de información a transmitir.
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-1.3.png" alt="Socket de Datagrama" />
+                                </figure>
+                                </p>
+
+                                <h3 class="fw-bolder mb-4 mt-5">Sockets de Paquetes Secuenciados (Sequenced Packet
+                                    Sockets )</h3>
+
+                                <p class="fs-5 mb-4">Son es similar a un socket de transmisión, con la excepción de que
+                                    se conservan los límites de los registros. Este tipo de socket permite a los
                                     usuarios manipular las cabeceras del protocolo de paquetes de secuencia (SPP) o del
                                     protocolo de datagramas de Internet (IDP) en un paquete o incluso en un grupo de
-                                    paquetes. Este zócalo también permite al usuario recibir cabeceras para los paquetes
+                                    aquetes. Este socket también permite al usuario recibir cabeceras para los paquetes
                                     entrantes.
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-1.4.png" alt="Socket de Datagrama" />
+                                </figure>
                                 </p>
+
                             </section>
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
+
+                            <p class="fs-5 mb-4">
+                            <ol>
+                                <li><a href="https://www.javatpoint.com/socket-meaning"
+                                        target="_blank">https://www.techopedia.com/definition/16208/socket </a></li>
+                                <li><a href="https://www.techopedia.com/definition/16208/socket"
+                                        target="_blank">https://www.webopedia.com/TERM/S/socket.html </a></li>
+                                <li><a href="https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm"
+                                        target="_blank">
+                                        https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm
+                                    </a></li>
+                                <li><a href="https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm"
+                                        target="_blank">https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm</a>
+                                </li>
+                                <li><a href="https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm "
+                                        target="_blank">https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm
+                                    </a></li>
+                            </ol>
+                            </p>
                         </article>
                     </div>
 
@@ -168,7 +221,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <ul class="list-unstyled mb-0">
-                                            <li><a href="ProgramacionDeAppsConSockets.html" >1.
+                                            <li><a href="ProgramacionDeAppsConSockets.html">1.
                                                     Programación de Aplicaciones con Sockets</a></li>
                                             <li><a href="#">» 2. Tipos de Sockets</a></li>
                                             <li><a href="VideoSockets.html">3. Video</a></li>
@@ -191,7 +244,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Aplicacionesr</a></li>
+                                            <li><a href="#">Aplicaciones</a></li>
                                             <li><a href="#">Red</a></li>
                                         </ul>
                                     </div>
@@ -227,9 +280,9 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Enlaces Útiles</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/#hero">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/about">Acerca De</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/team">Conócenos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#">Conócenos</a></li>
                         </ul>
                     </div>
 
@@ -237,14 +290,17 @@
                         <h4>Contenido</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="ProgramaciónDeAppsConSockets.html">Programación de Aplicaciones con
+                                    href="ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
                                     Sockets</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="SeguridadEnLaComunicaciónDeDatos.html">Seguridad en la Comunicación de Datos
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicacionDeDatos.html">Seguridad en
+                                    la Comunicación de Datos
                                     en una Red</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaWeb.html">Seguridad en la
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadWeb/SeguridadEnLaWeb.html">Seguridad en la
                                     Web</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="InternetDeLasCosas.html">Internet de las
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../InternetCosas/InternetDeLasCosas.html">Internet de las
                                     Cosas</a></li>
                         </ul>
                     </div>

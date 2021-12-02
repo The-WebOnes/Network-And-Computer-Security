@@ -42,26 +42,26 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
-                    <li class="dropdown"><a href="#"><span>Temas de Interés</span> <i
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
 
-                            <li class="dropdown"><a
-                                    href="content/Sockets/ProgramacionDeAppsConSockets.html"><span>» Sockets</span> <i
+                            <li class="dropdown"><a href="ProgramacionDeAppsConSockets.html"><span>» Sockets</span> <i
                                         class="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="content/Sockets/ProgramacionDeAppsConSockets.html">» Programación de
-                                        Aplicaciones</a></li>
-                                <li><a href="content/Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
-                                <li><a href="content/Sockets/VideoSockets.html">Video</a></li>
+                                    <li><a href="ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="VideoSockets.html">Video</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown"><a
-                                    href="content/SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>» Seguridad
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>»
+                                        Seguridad
                                         en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">IPSec</a></li>
@@ -70,7 +70,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad en
+                            <li class="dropdown"><a href="../SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad en
                                         la Web</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">HTTPS</a></li>
@@ -79,7 +79,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/InternetCosas/InternetDeLasCosas.html"><span>» Internet
+                            <li class="dropdown"><a href="../InternetCosas/InternetDeLasCosas.html"><span>» Internet
                                         de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">Descripción General</a></li>
@@ -118,9 +118,7 @@
                                 <a class="badge bg-secondary text-decoration-none link-light" href="#">Servidores</a>
                                 <a class="badge bg-secondary text-decoration-none link-light" href="#">Aplicaciones</a>
                             </header>
-                            <!-- Preview image figure-->
-                            <figure class="mb-4"><img class="img-fluid rounded"
-                                    src="../../assets/img/topics/topic-1.jpg" alt="Modelo Cliente-Servidor" /></figure>
+
                             <!-- Post content-->
                             <section class="mb-5">
                                 <p class="fs-5 mb-4">Un socket es conocido como un tipo de software que actúa como un
@@ -145,6 +143,11 @@
                                     del socket. El servidor responderá a la solicitud del cliente y enviará una
                                     respuesta.</p>
 
+                                <!-- Preview image figure-->
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-1.jpg" alt="Modelo Cliente-Servidor" />
+                                </figure>
+
                                 <p class="fs-5 mb-4">La mayoría de las veces, las URL y sus conexiones se utilizan para
                                     acceder a Internet. Los programas requerirán un simple enlace de comunicación entre
                                     el cliente del programa y el servidor. Esta función está asociada a un socket que
@@ -154,7 +157,44 @@
                                     de comunicación, tanto el cliente como el servidor pueden leer o escribir en sockets
                                     que están conectados a un canal de comunicación específico.</p>
 
+
+                                <h3 class="fw-bolder mb-4 mt-5">Ventajas de Usar Sockets</h3>
+
+                                <p class="fs-5 mb-4">
+                                <ul>
+                                    <li><span>Almacenamiento y uso compartido de datos</span></li>
+                                    <li><span>Control de acceso de usuarios</span></li>
+                                    <li><span>Conexiones</span></li>
+                                    <li><span>Servicios</span></li>
+                                    <li><span>El intercambio de recursos</span></li>
+                                    <li><span>Acceso flexible</span></li>
+                                </ul>
+                                </p>
+
+                                <h3 class="fw-bolder mb-4 mt-5">Desventajas</h3>
+                                
+                                <p class="fs-5 mb-4">
+                                    <ul>
+                                        <li><span>Necesita tiempo administrativo</span></li>
+                                        <li><span>Fallo del servidor</span></li>
+                                        <li><span>Problema de frenado por cable</span></li>
+                                        <li><span>Seguridad</span></li>
+                                        <li><span>Costoso de configurar</span></li>
+                                    </ul>
+                                    </p>
                             </section>
+
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
+                                
+                            <p class="fs-5 mb-4">
+                                <ol>
+                                    <li><a href="https://www.javatpoint.com/socket-meaning" target="_blank">https://www.techopedia.com/definition/16208/socket </a></li>
+                                    <li><a href="https://www.techopedia.com/definition/16208/socket" target="_blank">https://www.webopedia.com/TERM/S/socket.html </a></li>
+                                    <li><a href="https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm" target="_blank"> https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm </a></li>
+                                    <li><a href="https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm" target="_blank">https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm</a></li>
+                                    <li><a href="https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm " target="_blank">https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm </a></li>
+                                </ol>
+                                </p>
                         </article>
                     </div>
 
@@ -190,7 +230,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Aplicacionesr</a></li>
+                                            <li><a href="#">Aplicaciones</a></li>
                                             <li><a href="#">Red</a></li>
                                         </ul>
                                     </div>
@@ -225,9 +265,9 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Enlaces Útiles</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/#hero">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/about">Acerca De</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/team">Conócenos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#team">Conócenos</a></li>
                         </ul>
                     </div>
 
@@ -235,14 +275,17 @@
                         <h4>Contenido</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="ProgramaciónDeAppsConSockets.html">Programación de Aplicaciones con
+                                    href="ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
                                     Sockets</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="SeguridadEnLaComunicaciónDeDatos.html">Seguridad en la Comunicación de Datos
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicacionDeDatos.html">Seguridad en
+                                    la Comunicación de Datos
                                     en una Red</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaWeb.html">Seguridad en la
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadWeb/SeguridadEnLaWeb.html">Seguridad en la
                                     Web</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="InternetDeLasCosas.html">Internet de las
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../InternetCosas/InternetDeLasCosas.html">Internet de las
                                     Cosas</a></li>
                         </ul>
                     </div>

@@ -45,22 +45,22 @@
                     <li><a class="nav-link scrollto active" href="../../index.html">Home</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
                     <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
-                    <li class="dropdown"><a href="#"><span>Temas de Interés</span> <i
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
                                 class="bi bi-chevron-down"></i></a>
                         <ul>
 
-                            <li class="dropdown"><a href="content/Sockets/ProgramacionDeAppsConSockets.html"><span>»
+                            <li class="dropdown"><a href="ProgramacionDeAppsConSockets.html"><span>»
                                         Sockets</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="content/Sockets/ProgramacionDeAppsConSockets.html">» Programación de
-                                        Aplicaciones</a></li>
-                                <li><a href="content/Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
-                                <li><a href="content/Sockets/VideoSockets.html">Video</a></li>
+                                    <li><a href="ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="VideoSockets.html">Video</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown"><a
-                                    href="content/SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>»
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicaciónDeDatos.html"><span>»
                                         Seguridad en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">IPSec</a></li>
@@ -69,7 +69,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad
+                            <li class="dropdown"><a href="../SeguridadWeb/SeguridadEnLaWeb.html"><span>» Seguridad
                                         en la Web</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">HTTPS</a></li>
@@ -78,7 +78,7 @@
                                 </ul>
                             </li>
 
-                            <li class="dropdown"><a href="content/InternetCosas/InternetDeLasCosas.html"><span>»
+                            <li class="dropdown"><a href="../InternetCosas/InternetDeLasCosas.html"><span>»
                                         Internet de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
                                 <ul>
                                     <li><a href="#">Descripción General</a></li>
@@ -121,34 +121,55 @@
                             <!-- Post content-->
                             <section class="mb-5">
 
-                                <p class="fs-5 mb-4">Un socket es conocido como un tipo de software que actúa como un
-                                    punto final que funciona estableciendo un enlace de comunicación de red
-                                    bidireccional entre el extremo del servidor y el programa receptor del
-                                    cliente.También se le conoce como un punto final en un canal de comunicación
-                                    bidireccional. Estos sockets se realizan y movilizan junto con un conjunto de
-                                    peticiones de programación que se identifican como llamadas de función, lo que
-                                    técnicamente se denomina interfaz de programación de aplicaciones (API). Un socket
-                                    es capaz de simplificar el funcionamiento de un programa porque los programadores
-                                    ahora sólo tienen que preocuparse de manipular las funciones del socket y esto les
-                                    permite confiar en el sistema operativo para transportar los mensajes a través de la
-                                    red correctamente.</p>
+                                <h3 class="fw-bolder mb-4 mt-5">Puertos y Tomas</h3>
+
+                                <p class="fs-5 mb-4">Un socket es una interfaz para enviar y recibir datos en un puerto
+                                    específico, mientras que un puerto es un valor numérico asignado a un proceso
+                                    específico o a una aplicación en el dispositivo.[6] Aunque existe una estrecha
+                                    relación entre un socket y un puerto, el socket no es realmente un puerto. Cada
+                                    puerto puede tener una sola toma pasiva esperando las conexiones entrantes y varias
+                                    tomas activas, cada una de las cuales corresponde a una conexión abierta en el
+                                    puerto. Hoy en día, el socket facilita y hace más eficiente la comunicación. Permite
+                                    establecer una conexión entre dos procesos diferentes en la misma o diferentes
+                                    máquinas. En pocas palabras, es una forma de hablar con otra computadora.</p>
 
                             </section>
-                            
+
                             <section id="about-video" class="about-video">
                                 <div class="container" data-aos="fade-up">
-                    
+
                                     <div class="row">
-                                        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+                                        <h3 class="fw-bolder mb-4 mt-5">Video Complementario</h3>
+                                        <div class="col-lg-6 video-box align-self-baseline" data-aos="fade-right"
+                                            data-aos-delay="100">
                                             <video controls poster="../../assets/img/videoposter/poster-1.jpg">
                                                 <source src="../../assets/video/sockets.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
-                    
+
                                 </div>
                             </section><!-- End About Video Section -->
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
 
+                            <p class="fs-5 mb-4">
+                            <ol>
+                                <li><a href="https://www.javatpoint.com/socket-meaning"
+                                        target="_blank">https://www.techopedia.com/definition/16208/socket </a></li>
+                                <li><a href="https://www.techopedia.com/definition/16208/socket"
+                                        target="_blank">https://www.webopedia.com/TERM/S/socket.html </a></li>
+                                <li><a href="https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm"
+                                        target="_blank">
+                                        https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_72/rzab6/howdosockets.htm
+                                    </a></li>
+                                <li><a href="https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm"
+                                        target="_blank">https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm</a>
+                                </li>
+                                <li><a href="https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm "
+                                        target="_blank">https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.hala001/astream.htm
+                                    </a></li>
+                            </ol>
+                            </p>
                         </article>
                     </div>
 
@@ -185,7 +206,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <ul class="list-unstyled mb-0">
-                                            <li><a href="#">Aplicacionesr</a></li>
+                                            <li><a href="#">Aplicaciones</a></li>
                                             <li><a href="#">Red</a></li>
                                         </ul>
                                     </div>
@@ -220,9 +241,9 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Enlaces Útiles</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/#hero">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/about">Acerca De</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html/team">Conócenos</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#">Conócenos</a></li>
                         </ul>
                     </div>
 
@@ -230,14 +251,17 @@
                         <h4>Contenido</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="ProgramaciónDeAppsConSockets.html">Programación de Aplicaciones con
+                                    href="ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
                                     Sockets</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a
-                                    href="SeguridadEnLaComunicaciónDeDatos.html">Seguridad en la Comunicación de Datos
+                                    href="../SeguridadComunicacion/SeguridadEnLaComunicacionDeDatos.html">Seguridad en
+                                    la Comunicación de Datos
                                     en una Red</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="SeguridadEnLaWeb.html">Seguridad en la
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadWeb/SeguridadEnLaWeb.html">Seguridad en la
                                     Web</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="InternetDeLasCosas.html">Internet de las
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../InternetCosas/InternetDeLasCosas.html">Internet de las
                                     Cosas</a></li>
                         </ul>
                     </div>
