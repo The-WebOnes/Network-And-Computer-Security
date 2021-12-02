@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>IPSec | Redes y Seguridad de Computadoras</title>
+    <meta content="This Website is for our final project on the subject 'Network and computer security' "
+        name="description">
+    <meta content="Network, Webste, Security, IP, TCP, Sockets, HTTPS, HTTP, Internet of things, SSL " name="keywords">
+
+    <!-- Favicon -->
+    <link href="../../assets/img/favicon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!--CSS Files -->
+    <link href="../../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="../../index.html" class="logo"><img src="../../assets/img/logo.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto" href="../../index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#about">Acerca De</a></li>
+                    <li><a class="nav-link scrollto" href="../../index.html#team">Conócenos</a></li>
+                    <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>Temas de Interés</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+
+                            <li class="dropdown"><a href="../Sockets/ProgramacionDeAppsConSockets.html"><span>»
+                                        Sockets</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../Sockets/ProgramacionDeAppsConSockets.html">Programación de
+                                            Aplicaciones</a></li>
+                                    <li><a href="../Sockets/TiposDeSockets.html">Tipos de Sockets</a></li>
+                                    <li><a href="../Sockets/VideoSockets.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="VPN.html"><span>»
+                                        Seguridad
+                                        en la Comunicación...</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="VPN.html">VPN</a></li>
+                                    <li><a href="IPSec.html">IPSec</a></li>
+                                    <li><a href="SeguridadComunicacionesVideo.html">Video</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="dropdown"><a href="../SeguridadWeb/https.html"><span>» Seguridad en
+                                        la Web</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../SeguridadWeb/https.html">HTTPS</a></li>
+                                    <li><a href="../SeguridadWeb/ssl.html">SSL / TLS</a></li>
+                                    <li><a href="../SeguridadWeb/SeguridadWebVideo.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown"><a href="../InternetCosas/descripción.html"><span>» Internet
+                                        de las Cosas</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    <li><a href="../InternetCosas/descripción.html">Descripción General</a></li>
+                                    <li><a href="../InternetCosas/funcionamiento.html">Cómo Funciona</a></li>
+                                    <li><a href="../InternetCosas/internetCosasVideo.html">Video</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Article ======= -->
+        <section class="article">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Post content-->
+                        <article>
+                            <!-- Post header-->
+                            <header class="mb-4">
+                                <!-- Post title-->
+                                <h1 class="fw-bolder mb-1">Seguridad en la comunicación de datos en una red: IPSec</h1>
+                                <!-- Post meta content-->
+                                <div class="text-muted fst-italic mb-2">Publicado 3 de Diciembre 2021
+                                </div>
+                                <!-- Post categories-->
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Seguridad</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Comunicación</a>
+                                <a class="badge bg-secondary text-decoration-none link-light" href="#">Redes</a>
+                            </header>
+
+                            <!-- Preview image figure-->
+                            <figure class="mb-4"><img class="img-fluid rounded"
+                                    src="../../assets/img/topics/topic-2.4.png" alt="Banner IPSec" />
+                            </figure>
+
+                            <!-- Post content-->
+                            <section class="mb-5">
+                                <p class="fs-5 mb-4">El protocolo IPsec es uno de los protocolos de seguridad más
+                                    importantes, y es ampliamente utilizado en empresas, y también en usuarios
+                                    domésticos. En los últimos tiempos, fabricantes como ASUS, AVM e incluso D-Link,
+                                    están integrando VPN en sus routers domésticos basados en el protocolo IPsec. Este
+                                    protocolo proporciona servicios de seguridad a la capa IP y a todos los protocolos
+                                    superiores, como TCP y UDP (capa de transporte en internet). Gracias a IPsec,
+                                    podemos comunicar diferentes puntos de Internet de forma segura, como dos o más
+                                    empresas entre ellas, o un usuario con su hogar, IPsec se adapta perfectamente a las
+                                    necesidades de VPN de ambos «mundos». </p>
+
+                                <p class="fs-5 mb-4">
+                                    Una característica muy importante de IPsec es que trabaja en la capa 3 de OSI (capa
+                                    de red), otros protocolos de VPN como OpenVPN o WireGuard trabajan en la capa 4
+                                    (capa de transporte), ya que estos dos últimos basan su seguridad en TLS y DTLS
+                                    respectivamente. IPsec en redes IPv4 está justo por encima de la cabecera IP, sin
+                                    embargo, en redes IPv6 está integrado (ESP) en la propia cabecera en la sección de
+                                    «Extensiones».
+                                </p>
+
+                                <p class="fs-5 mb-4">IPsec proporciona todos servicios necesarios para que la
+                                    comunicación sea segura, tal y como os hemos explicado anteriormente, estos
+                                    servicios son los de autenticación, confidencialidad, integridad y no repudio.
+                                    Gracias a estos servicios, la seguridad de las comunicaciones está garantizadas. Por
+                                    supuesto, también tenemos control de acceso, calidad de servicio y registro de
+                                    actividad.
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-2.5.png" alt="VPN de Accesos Remoto" />
+                                </figure>
+
+                                <p class="fs-5 mb-4">
+                                    Otra característica muy importante de IPsec, es que permite las dos arquitecturas de
+                                    VPN, tanto VPN de acceso remoto como también VPN site-to-site. En cuanto a la
+                                    negociación de la criptografía, IPsec integra un sistema de negociación para que los
+                                    equipos finales negocien el mejor cifrado posible que soporten, acordar las claves
+                                    de intercambio, y elegir los algoritmos de cifrado que tengan en común. Dependiendo
+                                    de la cabecera de IPsec usada (AH o ESP), podremos comprobar solamente la
+                                    autenticidad del paquete, o cifrar la carga útil de todo el paquete IP y comprobar
+                                    también su autenticidad.
+                                </p>
+
+                                <p class="fs-5 mb-4">
+                                    Esta arquitectura de VPN está diseñadas para interconectar diferentes sedes, si, por
+                                    ejemplo, tenemos una empresa con diferentes sedes, podremos interconectarlas entre
+                                    ellas vía VPN y acceder a todos los recursos. El establecimiento de la conexión no
+                                    se realiza en el cliente final, como ocurre con las VPN de acceso remoto, sino que
+                                    lo realizan los routers o los firewalls, de esta forma, toda la red se verá como
+                                    «una» sola, aunque el tráfico viaje por varios túneles VPN.
+                                </p>
+
+                                <p class="fs-5 mb-4">
+                                    Cuando dos hosts han establecido una sesión IPsec, los segmentos TCP y datagramas
+                                    UDP son enviados entre ellos cifrados y autenticados, además, se comprueba la
+                                    integridad también para evitar que alguien lo pueda haber modificado. Por tanto,
+                                    IPsec garantiza la seguridad de las comunicaciones.
+                                </p>
+
+                                <p class="fs-5 mb-4">
+                                    IPsec combina tecnologías de clave pública (RSA o Curvas Elípticas), algoritmos de
+                                    cifrado simétricos (AES principalmente, aunque también soporta otros como Blowfish o
+                                    3DES), y algoritmos de hash (SHA256, SHA512 etc), así como certificados digitales
+                                    basados en X509v3.
+
+                                </p>
+
+                                <figure class="mb-4"><img class="img-fluid rounded"
+                                        src="../../assets/img/topics/topic-2.6.png" alt="Banner IPSec VPN" />
+                                </figure>
+                            </section>
+
+                            <h4 class="fw-bolder mb-4 mt-5">Fuentes:</h4>
+
+                            <p class="fs-5 mb-4">
+                            <ol>
+                                <li><a href="https://www.redeszone.net/tutoriales/vpn/ipsec-que-es-como-funciona/"
+                                        target="_blank">https://www.redeszone.net/tutoriales/vpn/ipsec-que-es-como-funciona/</a>
+                                </li>
+                                <li><a href="https://www.redeszone.net/tutoriales/vpn/vpn-site-to-site-acceso-remoto-road-warrior/"
+                                        target="_blank">https://www.redeszone.net/tutoriales/vpn/vpn-site-to-site-acceso-remoto-road-warrior/</a>
+                                </li>
+                                <li><a href="https://www.redeszone.net/analisis/repetidores-wifi/d-link-dap-x1860/"
+                                        target="_blank">
+                                        https://www.redeszone.net/analisis/repetidores-wifi/d-link-dap-x1860/
+                                    </a></li>
+                            </ol>
+                            </p>
+                        </article>
+                    </div>
+
+                    <!-- Side widgets-->
+                    <div class="col-lg-4">
+
+                        <!-- Index widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Índice de Contenido</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="VPN.html">1. VPN</a></li>
+                                            <li><a href="#">» 2. IPSec</a></li>
+                                            <li><a href="SeguridadComunicacionesVideo.html">3. Video</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Categories widget-->
+                        <div class="card mb-4">
+                            <div class="card-header">Categorías</div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Seguridad</a></li>
+                                            <li><a href="#">Comunicación</a></li>
+                                            <li><a href="#">Redes</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="list-unstyled mb-0">
+                                            <li><a href="#">Protocolo</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>The WebOnes</h3>
+                        <p>
+                            Universidad Autónoma de Yucatán <br>
+                            Facultad de Matemáticas<br>
+                            Mérida, Yucatán <br>
+                            México <br><br>
+                            <strong>Sitio Web:</strong> <a href="https://www.matematicas.uady.mx" target="_blank">
+                                www.matematicas.uady.mx </a><br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Enlaces Útiles</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#about">Acerca De</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../../index.html#team">Conócenos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Contenido</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="ProgramacionDeAppsConSockets.html">Programación de Aplicaciones con
+                                    Sockets</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a
+                                    href="../SeguridadComunicacion/VPN.html">Seguridad en
+                                    la Comunicación de Datos
+                                    en una Red</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../SeguridadWeb/https.html">Seguridad en la
+                                    Web</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="../InternetCosas/descripción.html">Internet
+                                    de las
+                                    Cosas</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-md-flex py-4">
+
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>The WebOnes</span></strong>. Todos los derechos reservados
+                </div>
+                <div class="credits">
+                    Hecho con ❤️ por <a href="https://github.com/The-WebOnes" target="_blank">The WebOnes</a>
+                </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <a href="https://github.com/The-WebOnes" target="_blank" class="github" id="github-footer"><i
+                        class="bx bxl-github" id="git-footer"></i></a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="../../assets/vendor/aos/aos.js"></script>
+    <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../../assets/vendor/purecounter/purecounter.js"></script>
+    <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../../assets/js/main.js"></script>
+    ¿
+</body>
+
+</html>
