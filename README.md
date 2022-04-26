@@ -1,4 +1,4 @@
-# Network and Computer Security
+# Network and Computer Security Final Project
 ### Repo for the Network And Computer Security finalproject, imparted by the M.C Martín Leonel Chí Pérez
 ### 👥 Team Members:
 
